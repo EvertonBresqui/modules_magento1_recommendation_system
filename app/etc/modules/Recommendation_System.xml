@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Recommendation_System>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Recommendation_System>
+    </modules>
+</config>

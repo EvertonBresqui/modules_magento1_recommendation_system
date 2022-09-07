@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Recommendation_System>
+            <version>0.1.0</version>
+        </Recommendation_System>
+    </modules>
+  
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <recommendation_system>
+                                            <title>System</title>
+                                        </recommendation_system>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+    <default>
+        <recommendation_system>
+            <settings_general>
+                <name_file_log>recommendation_system.log</name_file_log>
+            </settings_general>
+        </recommendation_system>
+    </default>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <recommendation_system after="Mage_Adminhtml">Recommendation_System_Adminhtml</recommendation_system>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <global>
+        <models>
+            <recommendation_system>
+                <class>Recommendation_System_Model</class>
+            </recommendation_system>
+        </models>
+        <helpers>
+            <recommendation_system>
+                <class>Recommendation_System_Helper</class>
+            </recommendation_system>
+        </helpers>
+    </global>
+    
+</config>
