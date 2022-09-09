@@ -36,18 +36,6 @@
         </recommendation_system>
     </default>
 
-    <admin>
-        <routers>
-            <adminhtml>
-                <args>
-                    <modules>
-                        <recommendation_system after="Mage_Adminhtml">Recommendation_System_Adminhtml</recommendation_system>
-                    </modules>
-                </args>
-            </adminhtml>
-        </routers>
-    </admin>
-
     <global>
         <models>
             <recommendation_system>
